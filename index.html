@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Page title -->
+    <title>Ping Utility</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- Main container -->
+<div class="container">
+
+    <!-- Heading -->
+    <h1>🌐 Ping Utility</h1>
+
+    <!-- Form sends data to Flask -->
+    <form method="POST">
+
+        <!-- User enters Domain/IP -->
+        <input
+            type="text"
+            name="host"
+            placeholder="Enter Domain or IP Address"
+            required>
+
+        <!-- Submit button -->
+        <button type="submit">
+            Ping
+        </button>
+
+    </form>
+
+    <!-- Show result only after form submission -->
+    {% if status %}
+
+    <div class="result">
+
+        <h2>Status</h2>
+
+        <!-- Green if reachable -->
+        {% if status=="Reachable" %}
+            <p class="green">{{ status }}</p>
+
+        <!-- Red if unreachable -->
+        {% else %}
+            <p class="red">{{ status }}</p>
+        {% endif %}
+
+        <h3>Average Response Time</h3>
+
+        <!-- Display average ping -->
+        <p>{{ avg_time }}</p>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>

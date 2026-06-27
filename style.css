@@ -1,0 +1,114 @@
+/* Entire page */
+body{
+
+    margin:0;
+    padding:0;
+
+    font-family:Arial,sans-serif;
+
+    /* Dark background */
+    background:#0f172a;
+
+    color:white;
+
+}
+
+/* Card container */
+.container{
+
+    width:420px;
+
+    margin:70px auto;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+
+}
+
+/* Page heading */
+h1{
+
+    margin-bottom:25px;
+
+}
+
+/* Input field */
+input{
+
+    width:90%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    margin-bottom:20px;
+
+    font-size:16px;
+
+}
+
+/* Button */
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+/* Button hover effect */
+button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* Result section */
+.result{
+
+    margin-top:30px;
+
+}
+
+/* Success text */
+.green{
+
+    color:#22c55e;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+/* Failure text */
+.red{
+
+    color:#ef4444;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}

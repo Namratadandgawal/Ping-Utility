@@ -1,0 +1,22 @@
+Flask==3.1.1
+
+If you plan to upload this project to GitHub, your final project structure should look like this:
+
+Ping-Utility/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── style.css
+│
+└── .gitignore
+
+Then anyone can clone your project and run:
+
+pip install -r requirements.txt
+python app.py
